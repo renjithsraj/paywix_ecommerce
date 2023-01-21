@@ -1,5 +1,5 @@
-# eCommerce🛒
-This is a fully functional eCommerce website with a beautiful user interface and backend functionalities.
+# Paywix Ecommerce
+This is a project to demonstrate the usage of `paywix` payment gateway wrapper
 
 ## Features
 - User and guest checkout capabilities.
@@ -13,28 +13,7 @@ This is a fully functional eCommerce website with a beautiful user interface and
 2. Bootstrap (Frontend)
 3. CSS (Frontend)
 4. JavaScript (Client-Side)
-5. Paypal Integration (Payment Method)
 
-## Demonstration
-<p align="left">
-  <img width="780" src="preview/demonstration.gif">
-</p>
-
-## Preview
-#### Store
-<p align="left">
-  <img width="780" src="preview/stores.png">
-</p>
-
-#### Cart
-<p align="left">
-  <img width="780" src="preview/cart.png">
-</p>
-
-#### Checkout
-<p align="left">
-  <img width="780" src="preview/check-out.png">
-</p>
 
 ## To Run This Project
 1. clone this project on your local machine,
@@ -58,8 +37,6 @@ pip install -r requirements.txt
 python manage.py runserver
 ```
 
-## Deployed
-👉 Live Demo: [e-Commerce](https://ruhulaminparvez.pythonanywhere.com/)
+Credits:
 
-## Bugs
-> *If there any known bugs found or run into any issues please let me know. Please enjoy and feel free to share your opinion, constructive criticism, or comments about my work. Email: 👉 ruhulaminparvez007@gmail.com 😊 Thank you!*
+main_repo: @zinmyoswe
