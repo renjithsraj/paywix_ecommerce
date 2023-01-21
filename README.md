@@ -18,7 +18,7 @@ This is a project to demonstrate the usage of `paywix` payment gateway wrapper
 ## To Run This Project
 1. clone this project on your local machine,
 ```
-git clone https://github.com/ruhulaminparvez/eCommerce.git
+git clone https://github.com/renjithsraj/paywix_ecommerce.git
 ```
 2. create a virtual environment inside eCommerce folder,
 ```

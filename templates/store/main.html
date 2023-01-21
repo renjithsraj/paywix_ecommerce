@@ -68,7 +68,7 @@
      <body style="font-family: 'Glory', sans-serif;">
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <a class="navbar-brand" href="{% url 'store' %}"><img width="40px" height="40px" src="{% static 'images/logo.png' %}">e-Commerce</a>
+          <a class="navbar-brand" href="{% url 'store' %}">Paywix</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -80,7 +80,11 @@
               </li>
             </ul>
             <div class="form-inline my-2 my-lg-0">
-                <a href="#"class="btn btn-primary">Login</a>
+                {% if request.user.is_authenticated %}
+                    <p style="color: white; margin-top: 12%;"> Hi {{request.user.username}}</p>
+                {% else %}
+                    <a href="#"class="btn btn-primary">Login</a>
+                {% endif %}
                 <a href="{% url 'cart' %}">
                     <img  id="cart-icon" src="{% static 'images/cart.png' %}">
                 </a>
