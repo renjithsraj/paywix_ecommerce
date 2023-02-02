@@ -1,0 +1,17 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+	<div class="row">
+        <div class="jumbotron" style="box-shadow: 2px 2px 4px #000000;">
+            <h2 class="text-center">YOUR ORDER HAS BEEN COMPLETED</h2>
+          <h3 class="text-center">Thank you for your payment, it’s {{order.txn_stts}}</h3>
+
+          <p class="text-center">Your order # is: {{order.transaction_id}}</p>
+          <p class="text-center">{{order.transaction_msg}}</p>
+            <center><div class="btn-group" style="margin-top:50px;">
+                <a href="{% url 'store' %}" class="btn btn-lg btn-warning">CONTINUE</a>
+            </div></center>
+        </div>
+	</div>
+</div>
+{% endblock content %}

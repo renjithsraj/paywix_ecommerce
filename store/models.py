@@ -32,6 +32,11 @@ class Order(models.Model):
     date_order = models.DateTimeField(auto_now_add=True)
     complete = models.BooleanField(default=False, null=True, blank=True)
     transaction_id = models.CharField(max_length=200, null=True)
+    pg_source = models.CharField(max_length=225, null=True, blank=True)
+    pg_id = models.CharField(max_length=255, null=True, blank=True)
+    pg_response = models.TextField(null=True, blank=True)
+    txn_stts = models.CharField(default="InProgress", max_length=70)
+    transaction_msg = models.TextField(null=True, blank=True)
 
     def __str__(self):
         return str(self.id)

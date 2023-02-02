@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-$7wi1%wk58dzg#btbc63n^skb!2oz2!$o@)jktb+4=npli91^5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'store.apps.StoreConfig',
+    'paywix'
 ]
 
 MIDDLEWARE = [
@@ -141,3 +142,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+LOGIN_REDIRECT_URL = "/"
+LOGOUT_REDIRECT_URL = "/"  # new
+
+
+# Paywix Configs
+MERCHANT_KEY = "gtKFFx"
+MERCHANT_SALT = "4R38IvwiV57FwVpsgOvTXBdLE4tHUXFW"
+RESPONSE_URL = "http://127.0.0.1:8000/payment_response_handler/"
+APPEND_SLASH=False
