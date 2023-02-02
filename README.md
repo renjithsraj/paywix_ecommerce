@@ -1,6 +1,9 @@
 # Paywix Ecommerce
 This is a project to demonstrate the usage of `paywix` payment gateway wrapper
 
+Payecommerce is a sample e-commerce application that uses the Django framework. It serves as a demonstration of how to integrate the Paywix payment gateway wrapper into a Django-based e-commerce application. The Paywix package provides an easy-to-use interface for integrating with the payment gateway, making it simple to process payments in your e-commerce application.
+
+
 ## Features
 - User and guest checkout capabilities.
 - Setting up the templates and data structure in the first two modules.
